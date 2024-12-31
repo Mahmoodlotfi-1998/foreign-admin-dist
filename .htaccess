@@ -1,4 +1,4 @@
-# Redirect all requests to index.html
+# Redirect all requests to index.html for Vue Router history mode
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
