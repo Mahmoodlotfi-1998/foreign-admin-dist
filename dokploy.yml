@@ -1,8 +1,8 @@
-name: vue-app-2
+name: my-spa-app
 services:
   web:
-    image: httpd:latest  # Use Apache HTTP Server
+    build_type: dockerfile
+    dockerfile_path: ./Dockerfile
+    context_path: .
     ports:
-      - "8080:80"  # Map host port 7070 to container port 80
-    volumes:
-      - ./:/usr/local/apache2/htdocs/  # Serve static files from the current directory
+      - "8080:80"
