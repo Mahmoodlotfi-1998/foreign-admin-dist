@@ -5,4 +5,4 @@ services:
     dockerfile_path: ./Dockerfile
     context_path: .
     ports:
-      - "8080:80"
+      - "80:80"
