@@ -1,8 +1,8 @@
-name: my-spa-app
+name: spa-app
 services:
   web:
     build_type: dockerfile
-    dockerfile_path: ./Dockerfile
-    context_path: .
+    dockerfile_path: ./Dockerfile  # Path to the Dockerfile
+    context_path: .               # Context is the current directory
     ports:
-      - "80:80"
+      - "8080:80"                 # Map port 8080 on the host to port 80 in the container
