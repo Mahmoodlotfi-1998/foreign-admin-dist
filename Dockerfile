@@ -1,12 +1,14 @@
-FROM nginx:latest
+# Use the official Nginx image
+FROM nginx:alpine
 
-# Remove the default Nginx configuration file
+# Remove the default Nginx configuration
 RUN rm /etc/nginx/conf.d/default.conf
 
-# Copy your custom Nginx configuration file
+# Copy custom Nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/
 
-# Copy your application files
-COPY . /usr/share/nginx/html
+# Copy static files to the Nginx HTML directory
+COPY ./dist /usr/share/nginx/html
 
+# Expose port 80
 EXPOSE 80
