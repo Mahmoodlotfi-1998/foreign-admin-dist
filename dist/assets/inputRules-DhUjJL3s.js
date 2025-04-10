@@ -1,0 +1,1 @@
+import{f as r}from"./index-DSlaLO5m.js";function s(e){return e?[{required:!0,message:`Field ${e} is required`}]:[{required:!0,message:"Please complete required field"}]}r(()=>{const e=s();return e.push({pattern:/^[A-Za-z]*$/,message:"You must input English Characters"}),e});export{s as i};
